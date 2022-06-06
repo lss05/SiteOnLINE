@@ -9,16 +9,15 @@ body {
 }
 
 div.panel-top {
-    width: 100vw;
-    /*background-color: rgba(255, 255, 0,0.1);*/
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; /*Alinha elementos no eixo principal */
-    align-items: center; /*Alinha elementos no eixo perpendicular*/
-    flex-wrap: wrap;
-    border-bottom: 1px solid rgba(9, 226, 63,0.2);
-    orientation: relative;
+    width: 1370px;
+    height: 350px;
+    cursor: pointer;
+    background-image: url(imagens/empresa-de-seguranca-eletronica-sp-1024x260.jpg);
+    background-position: 0% 0%;
+    box-sizing:border-box;
+    background-size:cover
 }
+
 .my-header {
     display: flex;
     flex-direction: row;
@@ -166,19 +165,7 @@ p:hover {
     box-sizing: border-box;
 }
 
-div.logo {
-    width: 100vw;
-    height: 50vh;
-    cursor: pointer;
-    background-image: url(imagens/empresa-de-seguranca-eletronica-sp-1024x260.jpg);
-    background-position: 0% 0%;
-    box-sizing:border-box;
-    background-size:cover
-    
-}
-
 div.img-rodape {
-    border: 1px solid black;
     width: 1370px;
     height: 260px;
     cursor: pointer;
