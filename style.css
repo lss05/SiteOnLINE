@@ -1,0 +1,284 @@
+
+body {
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    background-image: linear-gradient(rgba(44,55,66,0.5),rgba(0,1,200,1));
+    background-size: cover;
+    box-sizing: border-box;
+    
+}
+
+div.panel-top {
+    width: 100vw;
+    /*background-color: rgba(255, 255, 0,0.1);*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /*Alinha elementos no eixo principal */
+    align-items: center; /*Alinha elementos no eixo perpendicular*/
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(9, 226, 63,0.2);
+    orientation: relative;
+}
+.my-header {
+    display: flex;
+    flex-direction: row;
+}
+div.left-painel {
+    display: flex;
+    flex-direction: column;
+    /*height: 600px;*/
+    width: 300px;
+    border: 1px solid black; 
+    gap: 2%;   
+}
+
+/*Opçoes do painel de categorias de produtos*/
+div.opcoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: stretch;
+    border-top: 10px solid darkred;
+    border-left: 10px solid darkred;
+    border-bottom: 10px solid darkred;
+    
+}
+.proposta-orcamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: stretch;
+    background-color: rgb(26, 170, 122);
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.higth-catalogos {
+    display: flex;
+    flex-direction: column;
+    border: 0px solid black;
+    
+}
+.estilo-lblOrcamento {
+    color: rgb(151, 0, 88);
+    font-weight: bold;
+    text-align: left;
+    padding-left: 1%;
+    padding-top: 8%;
+    height: 55px;
+    /*border-bottom: 1px solid yellow;*/
+   
+    
+    
+}
+input.ety {
+    width: 256px;
+    height: 30px;
+    border: 1px solid rgb(67, 180, 143);
+    
+    font-size: 15pt;
+    text-align: left;
+    background-color: rgb(67, 180, 143);
+}
+div.titleOrcamento {
+    text-align: center;
+    padding-top: 15%;
+    height: 30px;
+    font-size: 15pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+div.div-btnEnviarOrcamento {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 5%;
+    justify-content: center;
+}
+
+input.btnEnviarOrcamento {
+    width: 230px;
+    height: 50px;
+    border: 0px solid rgb(67, 180, 143);
+    background-color: rgb(67, 180, 143);
+    color: rgb(151, 0, 88);
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+input.btnEnviarOrcamento:hover {
+    background-color: rgb(39, 6, 77);
+    color: white;
+}
+
+.row-estilo {
+    display: flex;
+    flex-direction: row;
+    padding: 2% 2% 2% 2%;
+    gap: 2%;
+    cursor: pointer;   
+}
+
+p.produtos {
+    padding: 40% 40% 40% 40%;
+    text-align: center;
+}
+
+div.grid-produtos {
+    width:300px;
+    height: 500px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+div.panel-bottom {
+    border: 1px solid yellow;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+p.p_acessar {
+    color: rgb(250, 236, 218);
+    font-weight: bold;
+    font: 1.2em "Fira Sans", sans-serif; 
+    cursor: pointer;
+    /*border: 1px solid black;*/
+    text-align: center;
+    border-radius: 10% 15%;
+    position: absolute;
+            
+}
+p.p_cadastrar {
+    color: rgb(250, 236, 218);
+    font-weight: bold;
+    font: 1.2em "Fira Sans", sans-serif; 
+    cursor: pointer;
+    /*border: 1px solid black;*/
+    text-align: center;
+    border-radius: 10% 15%;
+    position: absolute;
+            
+}
+
+p:hover {
+    /*border-bottom: 5px solid rgb(3, 14, 117);*/
+    box-sizing: border-box;
+}
+
+div.logo {
+    width: 100vw;
+    height: 50vh;
+    cursor: pointer;
+    background-image: url(imagens/empresa-de-seguranca-eletronica-sp-1024x260.jpg);
+    background-position: center;
+    box-sizing:border-box;
+    background-size:cover
+    
+}
+
+div.img-rodape {
+    border: 1px solid black;
+    width: 1370px;
+    height: 260px;
+    cursor: pointer;
+    background-image: url(imagens/rodape-1024_195.jpg);
+    background-position: 0% 0%;
+    box-sizing:border-box;
+    background-size:cover;
+    
+}
+header.conteiner-flags {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    orientation: row;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid red;
+}
+div.conteinerAcessar {
+    display: flex;
+    flex-direction: row;
+    /*border: 1px solid black;*/
+    justify-content: center;
+    align-items: flex-start;
+    height: 60px;
+    width: 150px;
+    box-sizing: border-box;
+
+}
+div.conteinerAcessar:hover {
+    box-sizing: border-box;
+    transition: border-bottom .30s;
+    border-bottom: 6px solid yellowgreen;
+}
+
+div.conteinerCadastrar:hover {
+    box-sizing: border-box;
+    transition: border-bottom .30s;
+    border-bottom: 6px solid rgb(255, 7, 7);
+}
+div.conteinerCadastrar {
+    display: flex;
+    flex-direction: row;
+    /*border: 1px solid black;*/
+    justify-content: center;
+    align-items: flex-start;
+    height: 60px;
+    width: 150px;
+    box-sizing: border-box;
+}
+div.subAcessar {
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60px;
+    width: 120px;
+    padding: 0% 10% 0% 10%;
+}
+
+div.subCadastrar {
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60px;
+    width: 150px;
+    padding: 0% 10% 0% 10%;
+}
+
+/*DIV CATEGORIAS - STYLING*/
+div.categorias {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(179, 169, 29);
+}
+
+div.subcategorias {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(179, 169, 29);
+    transition: background-color 2s;
+}
+
+p.p-categorias {
+    color: aqua;
+    font-weight: bold;
+    padding: 0% 10%;
+}
+
+div.subcategorias:hover {
+    background-color: darkred;
+}
