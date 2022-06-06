@@ -171,7 +171,7 @@ div.logo {
     height: 50vh;
     cursor: pointer;
     background-image: url(imagens/empresa-de-seguranca-eletronica-sp-1024x260.jpg);
-    background-position: center;
+    background-position: 0% 0%;
     box-sizing:border-box;
     background-size:cover
     
