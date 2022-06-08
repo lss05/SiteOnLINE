@@ -26,6 +26,7 @@
             </div>
         </div>
     </header>
+
     <header class="my-header">
         <div class="left-painel">
             <div class="opcoes">
@@ -52,8 +53,8 @@
                 </div>
             </div>
 
-            <div class="proposta-orcamento">
-                <div class="titleOrcamento estilo-lblOrcamento">
+            <div class="proposta-orcamento" id="proposta_orcamento">
+                <div class="titleOrcamento">
                     Solicite seu Orçamento
                 </div>
                 <div class="etyNome estilo-lblOrcamento">
@@ -77,7 +78,7 @@
                     <input class="ety" type="text" name="" id="txt-descricao">
                 </div>
                 <div class="div-btnEnviarOrcamento">
-                    <input class='btnEnviarOrcamento' type="button" value="Enviar">
+                    <input class='btnEnviarOrcamento' type="button" value="Enviar" onclick="enviar_orcamento()" onmouseout="Sair_btn()">
                     <br>
                     <p>Não usaremos estas informações para promover Span e Envio de Mensagens, informações éstas
                         tratadas de forma sigilosas.
@@ -141,7 +142,26 @@
     </footer>
 
     <script>
-        var lista = ['luan',30,'m',true]
+        function enviar_orcamento() {
+            var btnenviarorcamento = window.document.querySelector('input.btnEnviarOrcamento')
+            btnenviarorcamento.style.color = 'green'
+            btnenviarorcamento.style.background = 'darkred'
+
+            var panel_left_orcamento = window.document.getElementById('proposta_orcamento')
+            var etys = panel_left_orcamento.querySelectorAll('input')
+            etys[0].value = ''
+            etys[1].value = ''
+            etys[2].value = ''
+            etys[3].value = ''
+            etys[4].value = ''
+
+        }
+
+        function Sair_btn() {
+            var btnenviarorcamento = window.document.querySelector('input.btnEnviarOrcamento')
+            btnenviarorcamento.style.color = 'white'
+            btnenviarorcamento.style.background = '#43b48f'
+        }
     </script>
     
 </body>

@@ -5,6 +5,7 @@ body {
     background-image: linear-gradient(rgba(44,55,66,0.5),rgba(0,1,200,1));
     background-size: cover;
     box-sizing: border-box;
+    position: relative;
     
 }
 
@@ -15,20 +16,21 @@ div.panel-top {
     background-image: url(imagens/empresa-de-seguranca-eletronica-sp-1024x260.jpg);
     background-position: 0% 0%;
     box-sizing:border-box;
-    background-size:cover
+    background-size:cover;
+    /*position: relative;*/
 }
 
 .my-header {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 div.left-painel {
     display: flex;
     flex-direction: column;
-    /*height: 600px;*/
     width: 300px;
-    border: 1px solid black; 
-    gap: 2%;   
+    gap: 2%;
+    position: relative;   
 }
 
 /*Opçoes do painel de categorias de produtos*/
@@ -40,58 +42,66 @@ div.opcoes {
     border-top: 10px solid darkred;
     border-left: 10px solid darkred;
     border-bottom: 10px solid darkred;
+    position: relative;
+    flex-wrap: nowrap;
     
 }
 .proposta-orcamento {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: stretch;
+    align-items: center;
     background-color: rgb(26, 170, 122);
     padding-left: 4%;
     padding-right: 4%;
+    flex-wrap: nowrap;
+    position: relative;
 }
 
 .higth-catalogos {
     display: flex;
     flex-direction: column;
     border: 0px solid black;
-    
+    position: relative;
 }
 .estilo-lblOrcamento {
     color: rgb(151, 0, 88);
     font-weight: bold;
     text-align: left;
-    padding-left: 1%;
+    padding-left: 8%;
     padding-top: 8%;
     height: 55px;
-    /*border-bottom: 1px solid yellow;*/
-   
+    position: relative;
     
     
 }
 input.ety {
-    width: 256px;
+    width: 230px;
     height: 30px;
     border: 1px solid rgb(67, 180, 143);
     
     font-size: 15pt;
     text-align: left;
     background-color: rgb(67, 180, 143);
+    position: relative;
 }
 div.titleOrcamento {
     text-align: center;
     padding-top: 15%;
+    width: 273px;
     height: 30px;
     font-size: 15pt;
     font-weight: bold;
-    cursor: pointer;
+    position: relative;
+    background-size: cover;
 }
 div.div-btnEnviarOrcamento {
     padding-top: 10px;
     padding-bottom: 30px;
-    padding-left: 5%;
+    padding-left: 3%;
     justify-content: center;
+    position: relative;
+    object-fit: cover;
 }
 
 input.btnEnviarOrcamento {
@@ -102,6 +112,7 @@ input.btnEnviarOrcamento {
     color: rgb(151, 0, 88);
     font-weight: bold;
     font-size: 12pt;
+    cursor: pointer;
 }
 
 input.btnEnviarOrcamento:hover {
