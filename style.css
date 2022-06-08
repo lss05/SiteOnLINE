@@ -9,8 +9,13 @@ body {
     
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 div.panel-top {
-    width: 1370px;
+    width: 100%;
     height: 350px;
     cursor: pointer;
     background-image: url(imagens/empresa-de-seguranca-eletronica-sp-1024x260.jpg);
@@ -30,7 +35,8 @@ div.left-painel {
     flex-direction: column;
     width: 300px;
     gap: 2%;
-    position: relative;   
+    position: relative;
+    /*border: 1px solid darkred;*/   
 }
 
 /*Opçoes do painel de categorias de produtos*/
@@ -42,10 +48,12 @@ div.opcoes {
     border-top: 10px solid darkred;
     border-left: 10px solid darkred;
     border-bottom: 10px solid darkred;
+    border-right: 1px solid darkred;
     position: relative;
     flex-wrap: nowrap;
     
 }
+
 .proposta-orcamento {
     display: flex;
     flex-direction: column;
@@ -56,14 +64,33 @@ div.opcoes {
     padding-right: 4%;
     flex-wrap: nowrap;
     position: relative;
+    border: 1px solid darkred;
 }
 
 .higth-catalogos {
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 900px;
+    width: 1100px;
     border: 0px solid black;
     position: relative;
+    
+    
 }
+
+.higth-catalogos::-webkit-scrollbar {
+
+    background-color: rgba(173, 216, 230, 0.253);
+    border: 0px solid darkred;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.higth-catalogos::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 13, 0.459);        /* color of the tracking area */
+  }
+
 .estilo-lblOrcamento {
     color: rgb(151, 0, 88);
     font-weight: bold;
@@ -98,14 +125,14 @@ div.titleOrcamento {
 div.div-btnEnviarOrcamento {
     padding-top: 10px;
     padding-bottom: 30px;
-    padding-left: 3%;
+    padding-left: 8%;
     justify-content: center;
     position: relative;
     object-fit: cover;
 }
 
 input.btnEnviarOrcamento {
-    width: 230px;
+    width: 236px;
     height: 50px;
     border: 0px solid rgb(67, 180, 143);
     background-color: rgb(67, 180, 143);
@@ -113,6 +140,7 @@ input.btnEnviarOrcamento {
     font-weight: bold;
     font-size: 12pt;
     cursor: pointer;
+    object-fit: cover;
 }
 
 input.btnEnviarOrcamento:hover {
@@ -125,7 +153,9 @@ input.btnEnviarOrcamento:hover {
     flex-direction: row;
     padding: 2% 2% 2% 2%;
     gap: 2%;
-    cursor: pointer;   
+    cursor: pointer;
+    flex-wrap: wrap;
+    width: 100%; 
 }
 
 p.produtos {
@@ -177,7 +207,7 @@ p:hover {
 }
 
 div.img-rodape {
-    width: 1370px;
+    width: 100%;
     height: 260px;
     cursor: pointer;
     background-image: url(imagens/rodape-1024_195.jpg);
@@ -185,12 +215,13 @@ div.img-rodape {
     box-sizing:border-box;
     background-size:cover;
     
+    
 }
 header.conteiner-flags {
-    width: 100vw;
-    height: 10vh;
+    width: 100%;
+    height: 60px;
     display: flex;
-    orientation: row;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     border: 1px solid red;
