@@ -76,6 +76,8 @@ div.opcoes {
     width: 1100px;
     border: 0px solid black;
     position: relative;
+    padding-left: 2%;
+    padding-right: 2%;
     
     
 }
@@ -151,8 +153,9 @@ input.btnEnviarOrcamento:hover {
 .row-estilo {
     display: flex;
     flex-direction: row;
-    padding: 2% 2% 2% 2%;
-    gap: 2%;
+    gap: 2% 2%;
+    padding-top: 0%;
+    padding-bottom: 2%;
     cursor: pointer;
     flex-wrap: wrap;
     width: 100%; 
