@@ -38,6 +38,7 @@ div.left-painel {
     width: 300px;
     gap: 2%;
     position: relative;
+    padding-bottom: 2%;
     /*border: 1px solid darkred;*/   
 }
 
@@ -73,14 +74,11 @@ div.opcoes {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    overflow-x: hidden;
     height: 900px;
     width: 960px;
     border: 0px solid black;
     position: relative;
-    min-width: 730px;
-    
-    gap: 0% 2%;
+    min-width: 300px;
     
     
 }
@@ -156,12 +154,10 @@ input.btnEnviarOrcamento:hover {
 .row-estilo {
     display: flex;
     flex-direction: row;
-    gap: 2% 2%;
-    padding-top: 0%;
-    padding-bottom: 2%;
     cursor: pointer;
     flex-wrap: wrap;
-    width: 100%; 
+    width: 100%;
+    gap: 2%;
 }
 
 p.produtos {
@@ -174,6 +170,7 @@ div.grid-produtos {
     height: 500px;
     border: 1px solid black;
     box-sizing: border-box;
+    margin-bottom: 2%;
 }
 
 div.panel-bottom {
